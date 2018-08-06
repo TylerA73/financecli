@@ -63,7 +63,7 @@ func main() {
 		xlsx.NewSheet("November")
 		xlsx.NewSheet("December")
 
-		titleStyle, _ := xlsx.NewStyle(`{"fill":{"type":"pattern","color":["#7c7a87"],"pattern":5}}`)
+		titleStyle, _ := xlsx.NewStyle(`{"fill":{"type":"pattern","color":["#7c7a87"],"pattern":1}}`)
 
 		for i := 1; i <= xlsx.SheetCount; i++ {
 			xlsx.SetCellStyle(xlsx.GetSheetName(i), "A1", "C1", titleStyle)
